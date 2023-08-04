@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <title>Sleep Stress</title>
+    <style>
+        img {  
+        max-width: 500px;  
+        height: 1000px; 
+        align-content: center; 
+        }  
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color: white;">Sleep Stress</a>
+        </div>
+      </nav>
+
+    <br>
+    <br>
+
+<!-- Queston 01 -->
+    <div class=" tab-pane active d-flex justify-content-center" id="q1" role="tabpanel" aria-labelledby="regular-tab">
+        <div class="card " style="width: 40rem; height: 50rem;">
+
+            <img class="card-img-top mx-auto d-block" src="./photos/gender.jpg" alt="Card image cap">
+
+            <div class="card-body">
+                <h5 class="card-title">How would you describe your gender?</h5>
+                <br>
+                <select class="form-select" aria-label="Default select example" id="gender">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>
+                <br>
+            </div>
+
+
+            <div class="container text-center d-flex justify-content-center">
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                    <a  class="btn btn-outline-primary" onclick="function1()">Next</a> 
+                    </div>
+                </div>
+            </div>
+            <br>                     
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div  class="d-flex justify-content-center tab-pane d-none" id="q2">
+        <div class="card " style="width: 40rem; height: 40rem;">
+
+            <img class="card-img-top mx-auto d-block" src="./photos/age.png" alt="Card image cap">
+
+            <div class="card-body">
+                <h5 class="card-title">How old are you ?</h5>
+
+                <br>
+                <input type="number" class="form-control" id="age" >
+                <br>
+            </div>
+
+
+            <div class="container text-center d-flex justify-content-center">
+                <div class="row">
+                    <div class="col">
+                    <a class="btn btn-outline-primary" onclick="functio1()">Back</a> 
+                    </div>
+                    <div class="col">
+                    <a class="btn btn-outline-primary " onclick="function2()">Next</a> 
+                    </div>
+                </div>
+            </div>
+            <br>                     
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+
+    <div class="d-flex justify-content-center d-none" id="q3">
+        <div class="card " style="width: 40rem; height: 40rem;">
+
+            <img class="card-img-top mx-auto d-block" src="./photos/work.png" alt="Card image cap">
+
+            <div class="card-body">
+                <h5 class="card-title">What is your Occupation?</h5>
+                <br>
+                <select class="form-select" aria-label="Default select example" id="occupation">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Software Engineer</option>
+                    <option value="2">Sales Representative</option>
+                    <option value="3">Teacher</option>
+                    <option value="4">Nurse</option>
+                    <option value="5">Engineer</option>
+                    <option value="6">Accountant</option>
+                    <option value="7">Scientist</option>
+                    <option value="8">Lawyer</option>
+                    <option value="9">Salesperson</option>
+                    <option value="10">Manager</option>
+                  </select>
+                <br>
+            </div>
+
+
+            <div class="container text-center d-flex justify-content-center">
+                <div class="row">
+                    <div class="col">
+                    <a class="btn btn-outline-primary" onclick="functio2()">Back</a> 
+                    </div>
+                    <div class="col">
+                    <a class="btn btn-outline-primary" onclick="function3()">Next</a> 
+                    </div>
+                </div>
+            </div>
+            <br>                     
+        </div>
+    </div>
+
+
+<!-- Question 4 -->
+
+<div class="d-flex justify-content-center d-none" id="q4">
+    <div class="card " style="width: 40rem; height: 40rem;">
+
+        <img class="card-img-top mx-auto d-block" src="./photos/sleep.avif" alt="Card image cap">
+
+        <div class="card-body">
+            <h5 class="card-title">How much did you sleep Today?</h5>
+            <br>
+            <input type="number" class="form-control" value="10" id="sleep_time">
+            <br>
+        </div>
+
+
+        <div class="container text-center d-flex justify-content-center">
+            <div class="row">
+                <div class="col">
+                <a class="btn btn-outline-primary" onclick="functio3()">Back</a> 
+                </div>
+                <div class="col">
+                <a class="btn btn-outline-primary" onclick="function4()">Next</a> 
+                </div>
+            </div>
+        </div>
+        <br>                     
+    </div>
+</div>
+
+<!-- Question 5 -->
+
+<div class="d-flex justify-content-center d-none" id="q5">
+    <div class="card " style="width: 40rem; height: 40rem;">
+
+        <img class="card-img-top mx-auto d-block" src="./photos/sleep2.jpg" alt="Card image cap">
+
+        <div class="card-body">
+            <h5 class="card-title">Rate Your Sleep ?</h5>
+            <br>
+            <p>Rate Your Sleep 1 to 10</p>
+            <input type="range" class="form-range" min="1" max="10" step="1" id="sleep_rate" id="sleep_rate">
+            <br>
+        </div>
+
+
+        <div class="container text-center d-flex justify-content-center">
+            <div class="row">
+                <div class="col">
+                <a class="btn btn-outline-primary" onclick="functio4()">Back</a> 
+                </div>
+                <div class="col">
+                <a class="btn btn-outline-primary" onclick="function5()">Next</a> 
+                </div>
+            </div>
+        </div>
+        <br>                     
+    </div>
+</div>
+
+
+<!-- Question 6 -->
+
+<div class="d-flex justify-content-center d-none" id="q6">
+    <div class="card " style="width: 40rem; height: 50rem;">
+
+        <img class="card-img-top mx-auto d-block" src="./photos/fit.jpg" alt="Card image cap">
+
+        <div class="card-body">
+            <h5 class="card-title">What is your current level of fittness? </h5>
+            <br>
+            <p>Rate 1 to 100</p>
+            <input type="range" class="form-range" min="1" max="100" step="1" id="fittness" id="fittness">
+            <br>
+        </div>
+
+
+        <div class="container text-center d-flex justify-content-center">
+            <div class="row">
+                <div class="col">
+                <a class="btn btn-outline-primary" onclick="functio5()">Back</a> 
+                </div>
+                <div class="col">
+                <a class="btn btn-outline-primary" onclick="function6()">Next</a> 
+                </div>
+            </div>
+        </div>
+        <br>                     
+    </div>
+</div>
+</div>
+
+<!-- Question 7 -->
+
+<div class="d-flex justify-content-center d-none" id="q7">
+    <div class="card " style="width: 40rem; height: 40rem;">
+
+        <img class="card-img-top mx-auto d-block" src="./photos/bmi.avif" alt="Card image cap">
+
+        <div class="card-body">
+            <h5 class="card-title">What is your BMI category ?</h5>
+            <br>
+            <select class="form-select" aria-label="Default select example" id="bmi">
+                <option selected>Open this select menu</option>
+                <option value="1">Overweight</option>
+                <option value="2">Normal</option>
+                <option value="3">Obese</option>
+                <option value="3">Normal Weight</option>
+              </select>
+            <br>
+        </div>
+
+
+        <div class="container text-center d-flex justify-content-center">
+            <div class="row">
+                <div class="col">
+                <a class="btn btn-outline-primary" onclick="functio6()">Back</a> 
+                </div>
+                <div class="col">
+                <a class="btn btn-outline-primary" onclick="function7()">Next</a> 
+                </div>
+            </div>
+        </div>
+        <br>                     
+    </div>
+</div>
+</div>
+
+<!-- Question 8 -->
+
+<div class="d-flex justify-content-center d-none" id="q8">
+    <div class="card " style="width: 40rem; height: 40rem;">
+
+        <img class="card-img-top mx-auto d-block" src="./photos/pressure.avif" alt="Card image cap">
+
+        <div class="card-body">
+            <h5 class="card-title">What is your Blood Presure ?</h5>
+            <br>
+
+            <input type="number" class="form-control" placeholder="up" id="blood_up">
+            <br>
+
+            <input type="number" class="form-control" placeholder="down" id="blood_down">
+            <br>
+        </div>
+
+
+        <div class="container text-center d-flex justify-content-center">
+            <div class="row">
+                <div class="col">
+                <a class="btn btn-outline-primary" onclick="functio7()">Back</a> 
+                </div>
+                <div class="col">
+                <a class="btn btn-outline-primary" onclick="function8()">Next</a> 
+                </div>
+            </div>
+        </div>
+        <br>                     
+    </div>
+</div>
+</div>
+
+<!-- Question 9 -->
+
+<div class="d-flex justify-content-center d-none" id="q9">
+    <div class="card " style="width: 40rem; height: 40rem;">
+
+        <img class="card-img-top mx-auto d-block" src="./photos/blood.avif" alt="Card image cap">
+
+        <div class="card-body">
+            <h5 class="card-title">What is your Hart Rate ?</h5>
+            <br>
+    
+            <input type="number" class="form-control" value="70" id="hart">
+
+            <br>
+        </div>
+
+
+        <div class="container text-center d-flex justify-content-center">
+            <div class="row">
+                <div class="col">
+                <a class="btn btn-outline-primary" onclick="functio8()">Back</a> 
+                </div>
+                <div class="col">
+                <a class="btn btn-outline-primary" onclick="function9()">Next</a> 
+                </div>
+            </div>
+        </div>
+        <br>                     
+    </div>
+</div>
+</div>
+
+<!-- Question 10 -->
+
+<div class="d-flex justify-content-center d-none" id="q10">
+    <div class="card " style="width: 40rem; height: 40rem;">
+
+        <img class="card-img-top mx-auto d-block" src="./photos/steps.avif" alt="Card image cap">
+
+        <div class="card-body">
+            <h5 class="card-title">Daily Steps Count ?</h5>
+            <input type="number" class="form-control" value="1000" id="step">
+            <br>
+        </div>
+
+
+        <div class="container text-center d-flex justify-content-center">
+            <div class="row">
+                <div class="col">
+                <a class="btn btn-outline-primary" onclick="functio9()">Back</a> 
+                </div>
+                <div class="col">
+                <a class="btn btn-outline-primary" onclick="function10()">Next</a> 
+                </div>
+            </div>
+        </div>
+        <br>                     
+    </div>
+</div>
+</div>
+<!-- Question 11 -->
+
+<div class="d-flex justify-content-center d-none" id="q11">
+    <div class="card " style="width: 40rem; height: 40rem;">
+
+        <img class="card-img-top mx-auto d-block" src="./photos/steps.avif" alt="Card image cap">
+
+        <div class="card-body">
+            <h5 class="card-title">Do you have a sleep Disorder</h5>
+            <select class="form-select" aria-label="Default select example" id="disorder">
+                <option selected>Open this select menu</option>
+                <option value="1">yes</option>
+                <option value="2">no</option>
+              </select>
+            <br>
+        </div>
+
+
+        <div class="container text-center d-flex justify-content-center">
+            <div class="row">
+                <div class="col">
+                <a class="btn btn-outline-primary" onclick="functio10()">Back</a> 
+                </div>
+                <div class="col">
+                <a class="btn btn-outline-primary" onclick="calculate()">Next</a> 
+                </div>
+            </div>
+        </div>
+        <br>                     
+    </div>
+</div>
+</div>
+
+<div class="d-flex justify-content-center d-none " id="calm-video">
+    <iframe width="800" height="500"  src="https://www.youtube.com/embed/KBew9RP1oXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div class="d-flex justify-content-center d-none" id="calm1-video">
+    <iframe width="800" height="500" src="https://www.youtube.com/embed/YpyLDi3koXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+
+<script>
+
+    function calculate() {
+        var gender = document.getElementById("gender").value;
+        var age = document.getElementById("age").value;
+        var occupation = document.getElementById("occupation").value;
+        var sleep_time = document.getElementById("sleep_time").value;
+        var sleep_rate = document.getElementById("sleep_rate").value;
+        var fitness = document.getElementById("fittness").value;
+        var bmi = document.getElementById("bmi").value;
+        var blood_up = document.getElementById("blood_up").value;
+        var blood_down = document.getElementById("blood_down").value;
+        var hart = document.getElementById("hart").value;
+        var step = document.getElementById("step").value;
+        var disorder = document.getElementById("disorder").value;
+
+        var stress = true;
+
+        if(hart >= 69.5){
+            if(sleep_time > 8 ){
+                stress = false;
+            }
+            else {
+
+                if(blood_up > 120.5 ){
+                    stress = true;
+                }
+                else{
+                    if(occupation == 5){
+                        stress = false;
+                    }
+                    else{
+                        if(occupation == 4){
+                            stress = false;
+                        }
+                        else{
+                            stress = true;
+                        }
+                    }
+                }
+            }
+        }
+        else{
+            if(occupation == 8){
+                stress = true;
+            }
+            else{
+                if(sleep_rate >= 6.5){
+
+                    if(disorder == 1){
+                        if(sleep_time > 6.75){
+                            stress = false
+                        }
+                        else{
+                            stress = true
+                        }
+                    }
+                    else{
+                        stress = false
+                    }
+                }
+                else{
+                    stress = true
+                }
+            }
+        }
+
+        var element = document.getElementById("q11");
+        element.classList.add("d-none");
+        
+        
+
+        if(stress){
+            var element = document.getElementById("calm-video");
+            element.classList.remove("d-none");
+
+        }
+        else{
+            var element = document.getElementById("calm1-video");
+            element.classList.remove("d-none");
+        }
+
+        
+
+    }
+
+    function function1() {
+        var element = document.getElementById("q1");
+        element.classList.add("d-none");
+        var element = document.getElementById("q2");
+        element.classList.remove("d-none");
+    }
+    function function2() {
+        var element = document.getElementById("q2");
+        element.classList.add("d-none");
+        var element = document.getElementById("q3");
+        element.classList.remove("d-none");
+    }
+    function function3() {
+        var element = document.getElementById("q3");
+        element.classList.add("d-none");
+        var element = document.getElementById("q4");
+        element.classList.remove("d-none");
+    }
+    function function4() {
+        var element = document.getElementById("q4");
+        element.classList.add("d-none");
+        var element = document.getElementById("q5");
+        element.classList.remove("d-none");
+    }
+    function function5() {
+        var element = document.getElementById("q5");
+        element.classList.add("d-none");
+        var element = document.getElementById("q6");
+        element.classList.remove("d-none");
+    }
+    function function6() {
+        var element = document.getElementById("q6");
+        element.classList.add("d-none");
+        var element = document.getElementById("q7");
+        element.classList.remove("d-none");
+    }
+    function function7() {
+        var element = document.getElementById("q7");
+        element.classList.add("d-none");
+        var element = document.getElementById("q8");
+        element.classList.remove("d-none");
+    }
+    function function8() {
+        var element = document.getElementById("q8");
+        element.classList.add("d-none");
+        var element = document.getElementById("q9");
+        element.classList.remove("d-none");
+    }
+    function function9() {
+        var element = document.getElementById("q9");
+        element.classList.add("d-none");
+        var element = document.getElementById("q10");
+        element.classList.remove("d-none");
+    }
+    function function10() {
+        var element = document.getElementById("q10");
+        element.classList.add("d-none");
+        var element = document.getElementById("q11");
+        element.classList.remove("d-none");
+    }
+
+    //back buttion
+    function functio1() {
+        var element = document.getElementById("q2");
+        element.classList.add("d-none");
+        var element = document.getElementById("q1");
+        element.classList.remove("d-none");
+    }
+    function functio2() {
+        var element = document.getElementById("q3");
+        element.classList.add("d-none");
+        var element = document.getElementById("q2");
+        element.classList.remove("d-none");
+    }
+    function functio3() {
+        var element = document.getElementById("q4");
+        element.classList.add("d-none");
+        var element = document.getElementById("q3");
+        element.classList.remove("d-none");
+    }
+    function functio4() {
+        var element = document.getElementById("q5");
+        element.classList.add("d-none");
+        var element = document.getElementById("q4");
+        element.classList.remove("d-none");
+    }
+    function functio5() {
+        var element = document.getElementById("q6");
+        element.classList.add("d-none");
+        var element = document.getElementById("q5");
+        element.classList.remove("d-none");
+    }
+    function functio6() {
+        var element = document.getElementById("q7");
+        element.classList.add("d-none");
+        var element = document.getElementById("q6");
+        element.classList.remove("d-none");
+    }
+    function functio7() {
+        var element = document.getElementById("q8");
+        element.classList.add("d-none");
+        var element = document.getElementById("q7");
+        element.classList.remove("d-none");
+    }
+    function functio8() {
+        var element = document.getElementById("q9");
+        element.classList.add("d-none");
+        var element = document.getElementById("q8");
+        element.classList.remove("d-none");
+    }
+    function functio9() {
+        var element = document.getElementById("q10");
+        element.classList.add("d-none");
+        var element = document.getElementById("q9");
+        element.classList.remove("d-none");
+    }
+    function functio10() {
+        var element = document.getElementById("q11");
+        element.classList.add("d-none");
+        var element = document.getElementById("q10");
+        element.classList.remove("d-none");
+    }
+
+</script>
+    
+</body>
+</html>
